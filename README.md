@@ -1,111 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Resume Filter - Documentation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        code {
-            background-color: #e4e4e4;
-            padding: 5px;
-            border-radius: 4px;
-            font-family: "Courier New", monospace;
-        }
-        pre {
-            background-color: #222;
-            color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-    </style>
-</head>
-<body>
+Here's a `README.md` file for your AI Resume Filter project:
 
-<div class="container">
-    <h1>AI Resume Filter 🎯</h1>
-    <p>AI-powered Resume Filtering system that helps recruiters efficiently screen and rank resumes using Machine Learning.</p>
+```markdown
+# AI Resume Filter
 
-    <h2>🚀 Features</h2>
-    <ul>
-        <li>📄 <b>Automated Resume Screening</b>: Uses AI to filter and rank resumes based on job descriptions.</li>
-        <li>🎯 <b>Keyword Matching</b>: Matches resumes with job-specific keywords.</li>
-        <li>🧠 <b>ML-based Scoring</b>: Assigns scores to resumes based on relevance.</li>
-        <li>📊 <b>Dashboard</b>: Visual insights into shortlisted candidates.</li>
-    </ul>
+A tool to filter and rank resumes using AI (powered by Groq's Llama model). This project helps recruiters or hiring managers quickly identify the most suitable candidates based on job descriptions.
 
-    <h2>🛠️ Tech Stack</h2>
-    <ul>
-        <li><b>Backend</b>: Node.js, Express.js</li>
-        <li><b>Frontend</b>: React.js / Next.js</li>
-        <li><b>Machine Learning</b>: GROQ LLAMA API</li>
-        <li><b>Database</b>: MongoDB / PostgreSQL</li>
-        <li><b>Cloud & Deployment</b>: AWS / Vercel / Heroku</li>
-    </ul>
+## Features
 
-    <h2>📂 Project Structure</h2>
-    <pre>
-AI-Resume-Filter/
-│── backend/          # Backend API for AI processing
-│── frontend/         # Frontend UI for recruiters
-│── models/           # ML models for resume filtering
-│── dataset/          # Sample resumes for training/testing
-│── README.md         # Project documentation
-└── .env              # Environment variables
-    </pre>
+- AI-powered resume filtering and ranking
+- Compare multiple resumes against a job description
+- Fast processing using Groq's inference engine
+- Simple and intuitive user interface
 
-    <h2>🔧 Setup Instructions</h2>
+## Prerequisites
 
-    <h3>1️⃣ Clone the Repository</h3>
-    <pre><code>git clone https://github.com/Codewith-me1/AI-Resume-Filter.git
-cd AI-Resume-Filter</code></pre>
+- Node.js (v14 or higher)
+- npm (comes with Node.js)
+- Groq API key (get it from [Groq Cloud](https://console.groq.com/))
 
-    <h3>2️⃣ Set Up Environment Variables</h3>
-    <p>Create a <code>.env</code> file in the <b>backend</b> folder and add your GROQ LLAMA API key:</p>
-    <pre><code>GROQ_API_KEY=your_api_key_here</code></pre>
+## Setup and Installation
 
-    <h2>🚀 Running Commands</h2>
+### Backend Server
 
-    <h3>Backend Commands</h3>
-    <pre><code>cd backend
-npm install
-node server/server.cjs</code></pre>
+1. Navigate to the project directory
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file in the root directory and add your Groq API key:
+   ```env
+   GROQ_API_KEY=your_api_key_here
+   ```
+4. Start the backend server:
+   ```bash
+   node server/server.cjs
+   ```
 
-    <h3>Frontend Commands</h3>
-    <pre><code>cd frontend
-npm install
-npm run dev</code></pre>
+### Frontend
 
-    <h2>📈 Future Enhancements</h2>
-    <ul>
-        <li>🤖 AI-powered chatbot for job recommendations</li>
-        <li>🔥 Resume parsing and skill extraction</li>
-        <li>🌍 Multi-language support</li>
-    </ul>
+1. Navigate to the project directory (if not already there)
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open your browser and visit `http://localhost:5173` (or the port shown in your terminal)
 
-    <h2>🤝 Contribution</h2>
-    <p>Contributions are welcome! Feel free to fork and submit PRs. 😊</p>
+## Usage
 
-    <hr>
-    <p>💡 <b>Made with ❤️ by [Your Name]</b></p>
-</div>
+1. Enter a job description in the provided field
+2. Upload one or more resumes (PDF or text files)
+3. Click "Filter Resumes" to process the documents
+4. View the ranked results with AI-generated insights
 
-</body>
-</html>
+## Project Structure
+
+- `server/` - Backend server handling AI processing
+- `src/` - Frontend React application
+- `public/` - Static assets
+
+## Technologies Used
+
+- Frontend: React, Vite
+- Backend: Node.js, Express
+- AI: Groq API with Llama model
+- Styling: CSS (or your preferred framework)
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+## License
+
+[MIT](LICENSE) (or specify your preferred license)
+```
+
+This README includes:
+1. Project description
+2. Features list
+3. Setup instructions for both backend and frontend
+4. Usage instructions
+5. Project structure overview
+6. Technologies used
+7. Contribution guidelines
+8. License information
+
+You can customize it further based on your specific project details or requirements.
